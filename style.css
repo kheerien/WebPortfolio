@@ -1,0 +1,698 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    background-attachment: scroll;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins/Poppins-Light.ttf);
+}
+
+section{
+    min-height: 100vh;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: 600;
+    background-color: black;
+    cursor: pointer;
+    border-bottom: 2px solid yellow;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .name-logo{
+    margin-left: 20px;
+}
+
+nav .name-logo:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+nav a{
+    text-decoration: none;
+    color: yellow;
+}
+
+nav i{
+    color: yellow;
+}
+
+nav .pages{
+    margin-right: 35px;
+}
+
+nav .pages a{
+    text-decoration: none;
+    font-size: 12px;
+    margin: 5px;
+    color: pink;
+}
+
+nav .pages a:hover{
+    text-decoration: underline 1.5px;
+    text-underline-offset: 3px;
+}
+
+nav .pages a:active{
+    color: yellow;
+}
+
+nav span{
+    color: pink;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-top: 2px solid yellow;
+}
+
+footer p{
+    color: yellow;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+footer a, .socials a{
+    color: rgb(255, 255, 0);
+    font-size: large;
+}
+
+footer i{
+    margin-left: 10px;
+}
+
+footer i:hover, .socials i:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+
+footer i:active, .socials i:active{
+    color: pink;
+}
+
+#homepage {
+    display: grid;
+    grid-template-areas: 'info pic';
+    grid-template-columns: 60% 40%;
+    flex: 1;
+    background-color: black;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.info{grid-area: info;}
+.pic{grid-area: pic;}
+
+.pic{
+    display: flex;
+    align-items: center;
+    /* background-color: white; */
+    flex-direction: column;
+    margin: auto;
+}
+
+/* .pic h4{
+    color: pink;
+    width: 150px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid pink;
+    margin-top: 10px;
+} */
+
+#homepage .pic img{
+    width: 50%;
+    border-radius: 50%;
+    margin: auto;
+    border: 5px solid pink;
+    padding: 10px;
+}
+
+.info {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    height: 100%;
+    width: 70%;
+}
+
+.info h1{
+    text-align: justify;
+    color: pink;
+    width: 100%;
+}
+
+.info span{
+    color: yellow;
+}
+
+.info #lil{
+    color: pink;
+    font-size: 20px;
+}
+
+.info p{
+    color: white;
+    width: 100%;
+    font-size: 13px;
+}
+
+.socials{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.socials i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#about{
+    background-color: black;
+    padding-top: 70px;
+}
+
+#about .abt-pic{
+    text-align: center;
+    height: fit-content;
+}
+
+/* #about .abt-pic p{
+    color: white;
+    text-align: center;
+    font-size: 13px;
+} */
+
+#about .abt-pic img{
+    width: 40%;
+    border-radius: 20px;
+    border: 2px solid pink;
+    padding: 5px;
+}
+
+.abt-container{
+    display: grid;
+    grid-template-areas: 'left right';
+    grid-template-columns: 40% 60%;
+}
+
+.left{grid-area: left;}
+.right {grid-area: right;}
+
+.bio{
+    margin: 0 auto;
+    width: 80%;
+    line-height: 2;
+    margin-top: 20px;
+    border-left: 2px solid pink;
+    padding: 10px;
+}
+
+.bio ul strong{
+    color: yellow;
+}
+
+.bio ul{
+    color: white;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.bio li{
+    list-style: none;
+}
+
+.right{
+    color: white;
+    font-size: 11px;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.education, .certifications{
+    border-radius: 10px;
+    padding: 0 20px ;
+    border-left: 3px solid pink;
+    border-right: 3px solid pink;
+}
+
+.resume h2{
+    text-align: center;
+    color: yellow;
+}
+
+.resume dl {
+    margin: 1em 0;
+}
+  
+.resume dt {
+    font-weight: bold;
+}
+  
+.resume dd {
+    margin-left: 1.5em; /* this creates the "tabbed" look */
+}
+
+.certifications{
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+.certifications a{
+    text-decoration: none;
+    background-color: yellow;
+    padding: 3px 5px;
+    box-sizing: border-box;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 10px;
+    border: 2px solid yellow;
+}
+
+.link{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.certifications a:active{
+    background-color: black;
+    border: 2px solid yellow;
+    color: yellow;
+}
+
+.card a:active{
+    background-color: black;
+    border: 2px solid black;
+    color: yellow;
+}
+
+.projects, .quizzes, .contact{
+    background-color: black;
+    padding-top: 70px;
+}
+
+.projects h1, .quizzes h1, .contact h1, .about h1{
+    color: yellow;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.quizzes h1{
+    margin-bottom: 20px;
+}
+
+.projects .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects .card{
+    width: 23%;
+    margin: 0 auto;
+}
+
+.projects img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card{
+    border-left: 3px solid yellow;
+    border-right: 3px solid yellow;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.blogsite{
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid pink;
+}
+
+.card a{
+    text-decoration: none;
+    background-color: yellow;
+    padding: 1px 10px;
+    box-sizing: border-box;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 2px solid yellow;
+    margin-top: 10px;
+}
+  
+.projects dt, .quizzes dt {
+    font-weight: bold;
+}
+  
+.projects dd, .quizzes dd {
+    margin-left: 1.5em; /* this creates the "tabbed" look */
+    font-size: 12px;
+}
+
+.projects .desc{
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.quizzes .card{
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid yellow;
+    border-top: 3px solid yellow;
+    width: 90%;
+    color: black;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.quizzes h3{
+    color: white;
+}
+
+.lessons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.quizzes .lessons{
+    background-color: pink;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    position: relative;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.quizzes .container{
+    display: grid;
+    grid-template-areas: 'card-left card-right';
+}
+
+.quizzes a{
+    background-color: white; 
+    border: 2px solid white; 
+    color: black;
+}
+
+.quizzes .view{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quizzes .view a:active{
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+
+.contact form{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 13px;
+}
+
+.contact form div{
+    color: white;
+}
+
+.contact form p{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.contact form input, .contact textarea{
+    width: 95%;
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.contact textarea{
+    resize: none;
+}
+
+.contact form input:focus,
+.contact textarea:focus{
+    outline: 2px solid yellow;
+}
+
+.contact button{
+    display: flex;
+    padding: 5px 15px;
+    color: yellow;
+    background-color: black;
+    font-weight: bold;
+    border: 2px solid yellow;
+    border-radius: 10px;
+}
+
+.contact button:active{
+    color: black;
+    background-color: yellow;
+    border: 2px solid yellow;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: yellow;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1024px and below */
+@media (max-width: 1024px) {
+    #homepage {
+        grid-template-areas: 
+            'pic'
+            'info';
+        grid-template-columns: 1fr;
+        padding: 20px;
+        row-gap: 30px;
+    }
+
+    .info, .pic {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info h1,
+    .info p {
+        text-align: center;
+    }
+
+    .abt-container {
+        grid-template-areas:
+            'left'
+            'right';
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        padding: 20px;
+    }
+
+    .projects .container,
+    .quizzes .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projects .card,
+    .quizzes .card {
+        width: 90%;
+    }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        color: yellow;
+    }
+
+    .pages {
+        display: none;
+        flex-direction: column;
+        width: 10%;
+        padding: 10px 20px;
+        background-color: black;
+    }
+
+    .ver{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pages.show {
+        display: flex;
+    }
+
+    .pages a {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    .info h1 {
+        font-size: 22px;
+    }
+
+    .info p {
+        font-size: 13px;
+    }
+
+    .about .abt-pic img {
+        width: 90%;
+    }
+
+    .contact form {
+        width: 95%;
+    }
+
+    .quizzes .lessons {
+        width: 100%;
+    }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    nav .name-logo {
+        font-size: 13px;
+    }
+
+    .menu-toggle{
+        font-size: 13px;
+    }
+
+    .info h1 {
+        font-size: 18px;
+    }
+
+    .info p {
+        font-size: 12px;
+    }
+
+    .resume dd,
+    .resume dt,
+    .bio ul {
+        font-size: 11px;
+    }
+
+    .certifications a,
+    .card a {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .form{
+        width: 95%;
+    }
+}
