@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+.skip-link{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #d9f6d9;
+    color: green;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    z-index: 10000;
+    transform: translateY(-200%);
+    transition: transform 0.2s;
+}
+
+.skip-link:focus{
+    transform: translateY(0);
+    outline: 2px solid green;
+}
+
+h1 {
+    text-align: center;
+    font-weight: lighter;
+    margin: 20px;
+    color: #ff4968;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    padding: 12px;
+    font-size: 1rem;
+    width:85%;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #fbe7ea;
+    border: none;
+}
+
+input:focus{
+    outline: 2px solid #ff4968;
+}
+
+button {
+    padding: 0 12px;
+    font-size: 15px;
+    margin-left: 0.5rem;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #d9f6d9;
+    border-radius: 5px;
+    font-family: poppins;
+}
+
+button:focus{
+    outline: 2px solid green;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px;
+}
+
+li {
+    background: white;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+li:focus {
+    outline: 2px solid green;
+}
+
+nav{
+    text-align: center;
+    padding: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 3%;
+    border-bottom: 2px solid #ff4968;
+    font-size: 15px;
+    color: green;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+nav a:hover{
+    color: black;
+}
+
+nav a:active{
+    color: green;
+}
+
+nav a:focus{
+    outline: 2px solid #ff4968;
+    border-bottom: none;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.ins, .form{
+    width: 80%;
+    margin: auto;
+    border-left: 2px solid #ff4968;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.instructions{
+    padding: 30px;
+    background-color: #d9f6d9;
+    border-radius: 15px;
+}
+
+h2{
+    color: green;
+}
+
+.form{
+    margin-top: 30px;
+}
