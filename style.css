@@ -347,6 +347,7 @@ footer i:active, .socials i:active{
     border-right: 3px solid yellow;
     padding: 10px;
     border-radius: 10px;
+    margin: 30px;
 }
 
 .proj{
@@ -696,3 +697,4 @@ footer i:active, .socials i:active{
         width: 95%;
     }
 }
+
