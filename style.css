@@ -333,7 +333,7 @@ footer i:active, .socials i:active{
 }
 
 .projects .card{
-    width: 23%;
+    width: 22%;
     margin: 0 auto;
 }
 
@@ -347,7 +347,8 @@ footer i:active, .socials i:active{
     border-right: 3px solid yellow;
     padding: 10px;
     border-radius: 10px;
-    margin: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .proj{
@@ -355,6 +356,10 @@ footer i:active, .socials i:active{
     padding: 10px;
     border-radius: 10px;
     border: 2px solid pink;
+}
+
+.card .proj{
+    margin: 0 auto;
 }
 
 .card a{
@@ -697,4 +702,5 @@ footer i:active, .socials i:active{
         width: 95%;
     }
 }
+
 
